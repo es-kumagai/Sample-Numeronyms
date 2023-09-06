@@ -16,12 +16,14 @@ function toNumeronym(node) {
             
         case Node.TEXT_NODE:
             numeronimize(node);
+            break;
             
         default:
             for (const child of node.childNodes) {
                 if (ingoringTagNames.includes(child.tagName)) continue;
                 toNumeronym(child);
             }
+            break;
     }
 }
 
