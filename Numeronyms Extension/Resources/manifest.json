@@ -20,11 +20,15 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": [
+            "*://wikipedia.org/*",
+            "*://*.wikipedia.org/*",
+            "https://www.swift.org/*"
+        ]
     }],
 
     "action": {
-        "default_popup": "popup.html",
+        "default_title": "強制ヌメロニム",
         "default_icon": {
             "16": "images/toolbar-icon-16.png",
             "19": "images/toolbar-icon-19.png",
@@ -35,5 +39,9 @@
         }
     },
 
-    "permissions": [ ]
+    "permissions": [
+        "background",
+        "tabs",
+        "nativeMessaging"
+    ]
 }

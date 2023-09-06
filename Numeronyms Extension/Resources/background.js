@@ -4,3 +4,12 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.greeting === "hello")
         sendResponse({ farewell: "goodbye" });
 });
+
+browser.action.onClicked.addListener(async (tab) => {
+   
+    const message = {
+        action: 'trigger'
+    }
+    
+    const response = await browser.tabs.sendMessage(tab.id, message);
+});
