@@ -21,9 +21,7 @@
     "content_scripts": [{
         "js": [ "content.js" ],
         "matches": [
-            "*://wikipedia.org/*",
-            "*://*.wikipedia.org/*",
-            "https://www.swift.org/*"
+            "<all_urls>"
         ]
     }],
 
