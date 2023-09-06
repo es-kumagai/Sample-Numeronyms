@@ -1,6 +1,10 @@
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
-    toNumeronym(document.body);
+    switch (request.action) {
+        case 'numeronimize':
+            toNumeronym(document.body);
+            break;
+    }
 });
 
 const ingoringTagNames = ['SCRIPT', 'NOSCRIPT', 'STYLE'];
@@ -10,14 +14,14 @@ function toNumeronym(node) {
     
     switch (node.nodeType) {
             
-    case Node.TEXT_NODE:
-        numeronimize(node);
-        
-    default:
-        for (const child of node.childNodes) {
-            if (ingoringTagNames.includes(child.tagName)) continue;
-            toNumeronym(child);
-        }
+        case Node.TEXT_NODE:
+            numeronimize(node);
+            
+        default:
+            for (const child of node.childNodes) {
+                if (ingoringTagNames.includes(child.tagName)) continue;
+                toNumeronym(child);
+            }
     }
 }
 
