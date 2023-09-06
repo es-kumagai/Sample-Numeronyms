@@ -38,8 +38,5 @@
     },
 
     "permissions": [
-        "background",
-        "tabs",
-        "nativeMessaging"
     ]
 }
