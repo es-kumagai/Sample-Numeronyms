@@ -18,8 +18,6 @@ function toNumeronym(node) {
                 return `<span title="${text}">${first}${lengthOfMiddles}${last}</span>`;
             });
             
-            console.info(`😇 ${numeronymedHTML}`);
-            
             const newNode = document.createElement('span');
             newNode.innerHTML = numeronymedHTML;
             
