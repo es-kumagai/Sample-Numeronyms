@@ -1,7 +1,7 @@
 browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
     switch (request.action) {
-        case 'numeronimize':
+        case 'numeronymize':
             toNumeronym(document.body);
             break;
     }
@@ -15,7 +15,7 @@ function toNumeronym(node) {
     switch (node.nodeType) {
             
         case Node.TEXT_NODE:
-            numeronimize(node);
+            numeronymize(node);
             break;
             
         default:
@@ -27,7 +27,7 @@ function toNumeronym(node) {
     }
 }
 
-function numeronimize(textNode) {
+function numeronymize(textNode) {
     
     const text = textNode.textContent;
     
