@@ -14,7 +14,7 @@ Web ページ内の単語を [ヌメロニム](https://ja.wikipedia.org/wiki/%E3
 
 ## これを話題にした勉強会
 
-ヌメロニム化する Safari 機能拡張について話した「やさしい Swift 勉強会」の具体的な対象回は [第293回](https://notion.yumemi.co.jp/swift/swift/%E7%AC%AC293%E5%9B%9E)、[第294回](https://notion.yumemi.co.jp/swift/swift/%E7%AC%AC294%E5%9B%9E)、そして [第295回](https://notion.yumemi.co.jp/swift/swift/%E7%AC%AC295%E5%9B%9E) の合計 3 回になります。まだ先になりそうですけれど、YouTube の [Channel Yumemi](https://www.youtube.com/playlist?list=PL3Utf2i5RcCxpuECdfLlXJnF_TsTUVIf6) にも勉強会での制作区の様子が動画公開される予定です。
+ヌメロニム化する Safari 機能拡張について話した「やさしい Swift 勉強会」の具体的な対象回は [第293回](https://notion.yumemi.co.jp/swift/swift/%E7%AC%AC293%E5%9B%9E)、[第294回](https://notion.yumemi.co.jp/swift/swift/%E7%AC%AC294%E5%9B%9E)、そして [第295回](https://notion.yumemi.co.jp/swift/swift/%E7%AC%AC295%E5%9B%9E) の合計 3 回になります。まだ先になりそうですけれど、YouTube の [Channel Yumemi](https://www.youtube.com/playlist?list=PL3Utf2i5RcCxpuECdfLlXJnF_TsTUVIf6) にも勉強会での制作の様子が動画公開される予定です。
 
 ## 機能拡張の使用方法
 
